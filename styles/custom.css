@@ -1,0 +1,359 @@
+/* ALGEMEEN
+*********************************************/
+
+body {
+
+    background-color: rgba(248, 243, 240, 1);
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.cursor-speciaal {
+
+    cursor: url("../img/icons8-down-arrow-100.png") 50 50, url("../img/icons8-down-arrow-50.png") 25 25, auto;
+
+}
+
+.navbar {
+
+    background-color: rgba(248, 243, 240, 1);
+}
+
+h1 {
+
+    text-align: center;
+    padding-bottom: 50px;
+
+}
+
+.div-extra-wit-onder {
+
+    margin-bottom: 20px;
+
+}
+
+.wit-achtergrond {
+
+    height: auto;
+    background-color: rgba(248, 243, 240, 1);
+
+}
+
+.div-extra-wit-onder-index {
+
+    margin-bottom: 20px;
+
+}
+
+footer {
+
+    font-size: 12px;
+    background-color: rgba(248, 243, 240, 1);
+
+}
+
+.footer-onder {
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+    width: 100%;
+
+}
+
+
+
+
+/* WORK
+*********************************************/
+
+.intro {
+
+    height: 100vh;
+
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    scale: 2;
+
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.vertical {
+
+    position: fixed;
+    bottom: 10px;
+    right: 0;
+    font-size: 64pt;
+    writing-mode:vertical-lr;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+
+}
+
+.work-margin {
+
+    margin-left: 0;
+}
+
+    /* Grow
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+
+  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+   */
+
+    /* Grow Shadow */
+
+.work-foto {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+
+}
+
+.work-foto:hover, .work-foto:focus, .work-foto:active {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    
+  }
+
+    /* einde grow*/
+
+
+
+/* ABOUT
+*********************************************/
+
+.about-small {
+
+    color: rgba(248, 243, 240, 1);
+    position: fixed;
+    right: 0;
+    font-size: 64pt;
+    writing-mode:vertical-lr;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+}
+
+.about-foto {
+
+    height: 100vh;
+    
+}
+
+.curve-xs {
+    opacity: 1;
+    z-index: 1000;
+    background-color: rgba(248, 243, 240, 1);
+    color: black;
+}
+
+textPath {
+
+    font-size: 4pt;
+
+}
+
+svg {
+
+    opacity: 0;
+}
+
+    /* progress bar */
+
+.progress{
+
+    position: relative;
+    top: 6px;
+    height: 10px;
+    margin: 10;
+    overflow: visible;
+    border-radius: 50px;
+    background: rgba(238, 214, 187, 0.3);
+    box-shadow: inset 0 10px  10px rgba(244, 245, 250,0.2);
+}
+
+.progress-bar {
+
+    background-color: rgb(238, 214, 187);
+
+}
+
+.progress .progress-bar{
+    border-radius: 50px;
+}
+
+.progress-value {
+
+    position: relative;
+    padding-right: 0;
+    text-align: right;
+    color: rgba(248, 243, 240, 1);
+
+}
+
+.progress-extra {
+
+    height: auto;
+
+}
+
+.progress-bar.active{
+    animation: reverse progress-bar-stripes 0.40s linear infinite, animate-positive 2s;
+}
+
+@-webkit-keyframes animate-positive{
+    0% { width: 0%; }
+}
+
+@keyframes animate-positive {
+    0% { width: 0%; }
+}
+
+    /* Progress bar end */
+
+
+.ervaring-naam {
+
+    font-weight: bold;
+    margin-bottom: 0;
+
+}
+
+.padding-education {
+
+    padding: 30px;
+
+}
+
+
+
+
+
+
+
+
+
+  
+
+
+/* MEDIA QUERIES
+*********************************************/
+
+/* Extra small devices (portrait phones, less than 576px)
+/ No media query since this is the default in Bootstrap*/
+
+/* Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) {
+
+    .vertical {
+
+        position: fixed;
+        bottom: 10px;
+        right: 0;
+        color: black;
+        
+    }
+
+
+
+    .progress-extra {
+
+        height: 25px;
+    
+    }
+
+
+    .footer-work-groot{
+
+        background-color: transparent;
+    }
+
+    .div-extra-wit-onder-weg {
+        
+        margin-bottom: 0px;
+
+    }
+
+    .div-extra-wit-onder-index {
+        margin-bottom: 50px;
+    }
+
+    .text-bottom {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .main-div {
+        position: relative;
+    }
+
+    .navbar {
+
+        background-color: rgba(248, 243, 240, 0);
+    }
+
+    
+}
+
+
+/* Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) {
+
+    svg {
+
+        opacity: 1;
+    }
+    
+    .curve-xs {
+        opacity: 0;
+
+    }
+}
+
+
+/* Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {}
+
+
+/* Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {}
